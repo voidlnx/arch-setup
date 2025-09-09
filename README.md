@@ -10,7 +10,9 @@ exit
 
 pacman -Sy
 
-pacman -S --noconfirm archlinux-keyring git
+pacman -S --noconfirm archlinux-keyring 
+
+pacman -S --noconfirm git
 
 git clone https://github.com/gxbrriellll/arch-install.git
 
