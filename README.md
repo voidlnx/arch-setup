@@ -16,6 +16,29 @@ pacman -S --noconfirm git
 
 git clone https://github.com/gxbrriellll/arch-install.git
 
+cfdisk /dev/SDA-NVME
+
+# 1G, EFI System
+
+# 16G, Linux swap
+
+# G
+
+mkfs.fat -F32 /dev/1G,EFISYSTEM
+
+mkfs.ext4 /dev/G
+y
+
+mkswap /dev/16G,LINUXSWAP
+
+swapon /dev/16G,LINUXSWAP
+
+mount /dev/G /mnt
+
+mkdir /mnt/efi
+
+mount /dev/16G,LINUXSWAP /mnt/efi
+
 cd arch-install
 
 bash install.sh
