@@ -31,6 +31,8 @@ rsync -avh --progress ~/arch-dotfiles/.config/ ~/.config/
 mkdir -p ~/.local/share/fonts
 rsync -avh --progress ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
 
+rsync -avh --progress ~/arch-dotfiles/Pictures/Wallpapers/ ~/.local/Pictures/Wallpapers/
+
 fc-cache -fv
 
 rm -rf ~/arch-dotfiles
