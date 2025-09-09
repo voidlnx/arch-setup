@@ -2,6 +2,8 @@
 
 iwctl
 
+station wlan0 get-networks
+
 station wlan0 connect WIFI
 
 PASSWORD
@@ -15,6 +17,8 @@ pacman -S --noconfirm archlinux-keyring
 pacman -S --noconfirm git
 
 git clone https://github.com/gxbrriellll/arch-install.git
+
+lsblk
 
 cfdisk /dev/SDA-NVME
 
