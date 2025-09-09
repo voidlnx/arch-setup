@@ -18,11 +18,11 @@ git clone https://github.com/gxbrriellll/arch-install.git
 
 cfdisk /dev/SDA-NVME
 
-# 1G, EFI System
+* 1G, EFI System
 
-# 16G, Linux swap
+* 16G, Linux swap
 
-# G
+* G
 
 mkfs.fat -F32 /dev/1G,EFISYSTEM
 
