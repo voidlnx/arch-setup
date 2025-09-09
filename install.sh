@@ -8,34 +8,6 @@ read -rp "--> user: " USERNAME
 read -rsp "--> passwd/$USERNAME: " PASSWORD
 echo ""
 
-DEVICE="/dev/sda"
-EFI_PART="${DEVICE}4"
-SWAP_PART="${DEVICE}5"
-ROOT_PART="${DEVICE}6"
-
-# Setup:
-
-echo "[*]"
-parted --script "$DEVICE" mkpart primary fat32 1MiB 513MiB
-parted --script "$DEVICE" name 4 efi
-parted --script "$DEVICE" set 4 esp on
-
-parted --script "$DEVICE" mkpart primary linux-swap 514MiB 16.5GiB
-parted --script "$DEVICE" name 5 swap
-
-parted --script "$DEVICE" mkpart primary ext4 16.5GiB 100%
-parted --script "$DEVICE" name 6 root
-
-echo "[**]"
-mkfs.fat -F32 "$EFI_PART"
-mkfs.ext4 "$ROOT_PART"
-mkswap "$SWAP_PART"
-swapon "$SWAP_PART"
-
-mount "$ROOT_PART" /mnt
-mkdir -p /mnt/boot/efi
-mount "$EFI_PART" /mnt/boot/efi
-
 echo "[✓]"
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   sudo nano fastfetch htop make curl wget bluez blueman bluez-utils networkmanager \
@@ -75,9 +47,6 @@ echo "$USERNAME:$PASSWORD" | chpasswd
 
 sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 
-mkdir -p /windows
-mount /dev/sda1 /windows 2>/dev/null || echo "!! /dev/sda1 (Windows)."
-
 grep -q "GRUB_DISABLE_OS_PROBER" /etc/default/grub || echo "GRUB_DISABLE_OS_PROBER=false" >> /etc/default/grub
 sed -i 's/^GRUB_TIMEOUT=.*/GRUB_TIMEOUT=30/' /etc/default/grub
 sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"/' /etc/default/grub
@@ -93,4 +62,3 @@ EOF
 umount -lR /mnt
 echo "[✓]"
 reboot now
-
