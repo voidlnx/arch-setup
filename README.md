@@ -22,9 +22,7 @@ bash install.sh
 
 sudo nmcli dev wifi connect WIFI pasword "PASSWORD"
 
-sudo pacman -Syu --noconfirm 
-
-sudo pacman -Syu --noconfirm git
+sudo pacman -Syu --noconfirm
 
 git clone https://github.com/gxbrriellll/arch-install.git
 
