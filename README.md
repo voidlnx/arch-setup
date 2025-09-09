@@ -26,7 +26,7 @@ cfdisk /dev/SDA-NVME
 
 * 16G, Linux swap
 
-* G
+* G, Linux filesystem
 
 mkfs.fat -F32 /dev/1G,EFISYSTEM
 
