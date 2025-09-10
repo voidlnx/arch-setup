@@ -36,7 +36,7 @@ mount /dev/G,LINUXFILESYSTEM /mnt
 
 mkdir /mnt/efi
 
-mount /dev/16G,LINUXSWAP /mnt/efi
+mount /dev/1G,EFISYSTEM /mnt/efi
 
 mkdir /windows
 
