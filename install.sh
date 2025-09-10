@@ -1,12 +1,10 @@
 #!/bin/bash
 set -e
 
-read -rp "--> hostname: " HOSTNAME
-read -rp "--> user: " USERNAME
-read -rsp "--> passwd/$USERNAME: " PASSWORD
-echo ""
+HOSTNAME="admin"
+USERNAME="admin"
+PASSWORD="admin"
 
-echo "[✓]"
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   sudo nano fastfetch htop make curl wget bluez blueman bluez-utils networkmanager \
   cargo gcc pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
@@ -58,5 +56,4 @@ systemctl enable NetworkManager
 EOF
 
 umount -lR /mnt
-echo "[✓]"
 reboot now
