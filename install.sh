@@ -5,11 +5,7 @@ HOSTNAME="admin"
 USERNAME="admin"
 PASSWORD="admin"
 
-pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
-  sudo git networkmanager \
-  bluez bluez-utils \
-  grub efibootmgr dosfstools mtools os-prober \
-  gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git networkmanager bluez bluez-utils grub efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
@@ -49,3 +45,4 @@ EOF
 
 umount -lR /mnt
 reboot now
+
