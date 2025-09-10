@@ -21,7 +21,7 @@ pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
   qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons \
   ntfs-3g xdg-desktop-portal xdg-desktop-portal-wlr grim rofi-emoji \
   libxcb slurp nautilus eog gnome-text-editor gnome-control-center \
-  gnome-themes-extra gnome-tweaks vlc firefox vlc-plugin-gstreamer vlc-plugin-ffmpeg
+  gnome-themes-extra gnome-tweaks vlc-plugin-gstreamer vlc-plugin-ffmpeg
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
