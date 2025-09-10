@@ -26,18 +26,21 @@ cfdisk /dev/SDA-NVME
 
 mkfs.fat -F32 /dev/1G,EFISYSTEM
 
-mkfs.ext4 /dev/G
-y
+mkfs.ext4 /dev/G,LINUXFILESYSTEM
 
 mkswap /dev/16G,LINUXSWAP
 
 swapon /dev/16G,LINUXSWAP
 
-mount /dev/G /mnt
+mount /dev/G,LINUXFILESYSTEM /mnt
 
 mkdir /mnt/efi
 
 mount /dev/16G,LINUXSWAP /mnt/efi
+
+mkdir /windows
+
+mount /dev/WINDOWSEFI /windows/
 
 git clone https://github.com/gxbrriellll/arch-install.git
 
