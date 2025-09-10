@@ -12,7 +12,7 @@ mkdir -p ~/.local/bin
 cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si --noconfirm
+makepkg -si --noconfirm --skippgpcheck
 cd ~
 rm -rf /tmp/yay
 
@@ -22,24 +22,20 @@ echo "QT_QPA_PLATFORM=wayland" | sudo tee /etc/environment.d/qt-wayland.conf
 
 flatpak install flathub com.github.tchx84.Flatseal -y
 
-echo "[*]"
 cd ~
-git clone --depth=1 https://github.com/gxbrriellll/arch-dotfiles.git ~/arch-install
+git clone --depth=1 https://github.com/gxbrriellll/arch-dotfiles.git ~/arch-dotfiles
 
 rsync -avh --progress ~/arch-dotfiles/.config/ ~/.config/
 
 mkdir -p ~/.local/share/fonts
 rsync -avh --progress ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
 
-rsync -avh --progress ~/arch-dotfiles/Pictures/Wallpapers/ ~/.local/Pictures/Wallpapers/
+rsync -avh --progress ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
 rm -rf ~/arch-dotfiles
 
-sudo pacman -Syu --noconfirm
-
 sudo systemctl enable gdm
 
-echo "[✓]"
 sudo reboot now
