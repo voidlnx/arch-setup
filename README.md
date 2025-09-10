@@ -2,8 +2,6 @@
 
 iwctl
 
-station wlan0 get-networks
-
 station wlan0 connect WIFI
 
 PASSWORD
@@ -13,8 +11,6 @@ exit
 pacman -Sy
 
 pacman -S --noconfirm archlinux-keyring git
-
-lsblk
 
 cfdisk /dev/SDA-NVME
 
