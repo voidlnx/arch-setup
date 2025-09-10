@@ -1,8 +1,6 @@
 #!/bin/bash
 set -e
 
-# Configs:
-
 read -rp "--> hostname: " HOSTNAME
 read -rp "--> user: " USERNAME
 read -rsp "--> passwd/$USERNAME: " PASSWORD
