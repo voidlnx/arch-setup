@@ -5,19 +5,9 @@ HOSTNAME="admin"
 USERNAME="admin"
 PASSWORD="admin"
 
-pacstrap -K /mnt base base-devel linux linux-headers linux-firmware \
-  sudo nano fastfetch htop make curl wget bluez blueman bluez-utils networkmanager \
-  cargo gcc pipewire efibootmgr grub dosfstools mtools os-prober alsa-utils \
-  pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts \
-  noto-fonts-emoji ttf-font-awesome archlinux-keyring git ttf-liberation ttf-dejavu mesa-utils \
-  libva-utils gnome-backgrounds p7zip xz gst-libav gst-plugins-base gst-plugins-good \
-  gst-plugins-bad gst-plugins-ugly ffmpeg flatpak inxi mesa-demos mesa \
-  wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects \
-  pacman-contrib gnome-software power-profiles-daemon xorg swww rofi wayland \
-  qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons \
-  ntfs-3g xdg-desktop-portal xdg-desktop-portal-wlr grim rofi-emoji \
-  libxcb slurp nautilus eog gnome-text-editor gnome-control-center \
-  gnome-themes-extra gnome-tweaks vlc-plugin-gstreamer vlc-plugin-ffmpeg
+pacstrap -K /mnt base linux linux-firmware \
+  sudo nano networkmanager \
+  grub efibootmgr dosfstools mtools os-prober
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
