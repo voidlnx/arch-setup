@@ -12,11 +12,7 @@ exit
 
 pacman -Sy
 
-pacman -S --noconfirm archlinux-keyring 
-
-pacman -S --noconfirm git
-
-git clone https://github.com/gxbrriellll/arch-install.git
+pacman -S --noconfirm archlinux-keyring git
 
 lsblk
 
@@ -42,6 +38,8 @@ mount /dev/G /mnt
 mkdir /mnt/efi
 
 mount /dev/16G,LINUXSWAP /mnt/efi
+
+git clone https://github.com/gxbrriellll/arch-install.git
 
 cd arch-install
 
