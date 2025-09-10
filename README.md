@@ -1,4 +1,4 @@
-# install.sh (Dual Boot, Windows)
+Tutorial, # install.sh (Dual Boot, Windows)
 
 iwctl
 
