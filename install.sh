@@ -6,7 +6,7 @@ USERNAME="admin"
 PASSWORD="admin"
 
 pacstrap -K /mnt base linux linux-firmware \
-  sudo nano networkmanager \
+  sudo git networkmanager \
   grub efibootmgr dosfstools mtools os-prober
 
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -47,3 +47,4 @@ EOF
 
 umount -lR /mnt
 reboot now
+
