@@ -1,4 +1,4 @@
-# Tutorial, install.sh (Dual Boot, Windows)
+# Tutorial Arch Linux, Dual Boot Windows
 
 iwctl
 
