@@ -38,7 +38,7 @@ mkdir /windows
 
 mount /dev/WINDOWSEFI /windows/
 
-pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano networkmanager bluez bluez-utils grub efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano networkmanager bluez bluez-utils grub fastfetch efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
 # post-install.sh
 
