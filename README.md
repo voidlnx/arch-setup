@@ -12,8 +12,6 @@ pacman -Sy
 
 pacman -S --noconfirm archlinux-keyring
 
-pacman -S --noconfirm git
-
 cfdisk /dev/SDA-NVME
 
 * 1G, EFI System
@@ -40,11 +38,7 @@ mkdir /windows
 
 mount /dev/WINDOWSEFI /windows/
 
-git clone https://github.com/gxbrriellll/arch-install.git
-
-cd arch-install
-
-bash install.sh
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git networkmanager bluez bluez-utils grub efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
 # post-install.sh
 
