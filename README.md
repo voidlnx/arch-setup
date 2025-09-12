@@ -40,6 +40,22 @@ mount /dev/WINDOWSEFI /windows/
 
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano ***INTEL/AMD***-ucode networkmanager bluez bluez-utils grub fastfetch efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt
+
+passwd
+
+***PASSWORD***
+
+***PASSWORD***
+
+useradd -m -g users -G wheel,storage,video,audio -s /bin/bash ***USER***
+
+passwd ***USER***
+
+***PASSWORD***
+
 # post-install.sh
 
 sudo nmcli dev wifi connect ***WIFI*** pasword "***PASSWORD***"
