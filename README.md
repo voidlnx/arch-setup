@@ -60,7 +60,7 @@ passwd ***USER***
 
 EDITOR=nano visudo
 
-***%wheel ALL=(ALL:ALL) ALL***
+(***%wheel ALL=(ALL:ALL) ALL***).
 
 ln -sf /usr/share/zoneinfo/
 
@@ -72,7 +72,7 @@ hwclock --systohc
 
 nano /etc/locale.gen 
 
-***en_US . UTF-8 UTF-8***
+(***en_US . UTF-8 UTF-8***).
 
 locale-gen
 
@@ -88,10 +88,7 @@ nano /etc/hosts
 
 nano /etc/default/grub
 
-***GRUB_DISABLE_OS_PROBER***
-***GRUB_TIMEOUT=30***
-***GRUB_CMDLINE_LINUX_DEFAULT***
-***GRUB_TERMINAL_OUTPUT***
+(***GRUB_DISABLE_OS_PROBER***, ***GRUB_TIMEOUT=30***, ***GRUB_CMDLINE_LINUX_DEFAULT***, ***GRUB_TERMINAL_OUTPUT***).
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
 
