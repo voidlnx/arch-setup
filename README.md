@@ -38,7 +38,7 @@ mkdir /mnt/efi
 
 mount /dev/***1G,EFISystem*** /mnt/efi
 
-pacstrap -K /mnt base base-devel linux linux-headers linux-firmware ***intel/amd***-ucode sudo git nano fastfetch htop make cmake curl wget bluez bluez-utils networkmanager cargo gcc pipewire efibootmgr grub dosfstools mtools os-prober
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware ***intel/amd***-ucode sudo git nano fastfetch htop make cmake curl wget bluez bluez-utils networkmanager cargo gcc go flatpak pipewire efibootmgr grub dosfstools mtools os-prober
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
