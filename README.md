@@ -40,7 +40,7 @@ mount /dev/***1G, EFI System*** /mnt/efi
 
 mkdir /windows
 
-mount /dev/WINDOWSEFI /windows/
+mount /dev/***Windows EFI*** /windows/
 
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano ***intel/amd***-ucode networkmanager bluez bluez-utils grub fastfetch efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
