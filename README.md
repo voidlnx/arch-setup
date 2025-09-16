@@ -112,11 +112,7 @@ sudo nano /etc/pacman.conf
 
 mkdir -p ~/Pictures/Screenshots 
 
-mkdir -p ~/Pictures/Wallpapers
-
 mkdir -p ~/.local/bin
-
-mkdir -p ~/.local/share/fonts
 
 git clone https://github.com/gxbrriellll/arch-dotfiles.git
 
