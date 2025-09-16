@@ -132,9 +132,9 @@ makepkg -si --noconfirm
 
 cd arch-setup
 
-chmod +x apps-install.sh
+chmod +x extra-apps-install.sh
 
-./apps-install.sh
+./extra-apps-install.sh
 
 mv ~/arch-dotfiles/.config/* ~/.config/
 
@@ -143,8 +143,6 @@ mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
 mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
-
-echo "QT_QPA_PLATFORM=wayland" | sudo tee /etc/environment.d/qt-wayland.conf
 
 sudo systemctl enable gdm
 
