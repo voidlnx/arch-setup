@@ -3,12 +3,12 @@ set -e
 
 sudo sed -i '/\[multilib\]/,/Include/ s/^#//' /etc/pacman.conf
 
-sudo pacman -Syu --noconfirm lib32-mesa gdm gnome hyprland htop curl wget blueman pipewire alsa-utils pipewire-alsa /
-pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu /
-gnome-backgrounds p7zip xz gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg flatpak /
-inxi wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects gnome-software power-profiles-daemon xorg swww rofi wayland /
-qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons xdg-desktop-portal xdg-desktop-portal-wlr grim /
-rofi-emoji libxcb slurp nautilus eog gnome-text-editor gnome-control-center gnome-themes-extra gnome-tweaks vlc-plugin-gstreamer vlc-plugin-ffmpeg /
+sudo pacman -Syu --noconfirm lib32-mesa gdm gnome hyprland htop curl wget blueman pipewire alsa-utils pipewire-alsa ***/***
+pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu ***/***
+gnome-backgrounds p7zip xz gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg flatpak ***/***
+inxi wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects gnome-software power-profiles-daemon xorg swww rofi wayland ***/***
+qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons xdg-desktop-portal xdg-desktop-portal-wlr grim ***/***
+rofi-emoji libxcb slurp nautilus eog gnome-text-editor gnome-control-center gnome-themes-extra gnome-tweaks vlc-plugin-gstreamer vlc-plugin-ffmpeg firefox ***/***
 
 mkdir -p ~/Pictures/Screenshots
 mkdir -p ~/Pictures/Wallpapers
@@ -44,3 +44,4 @@ rm -rf ~/arch-dotfiles
 sudo systemctl enable gdm
 
 sudo systemctl start gdm
+
