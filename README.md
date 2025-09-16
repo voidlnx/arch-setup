@@ -14,7 +14,7 @@ pacman -S --noconfirm archlinux-keyring
 
 lsblk
 
-cfdisk /dev/***SDA-NVME***
+cfdisk /dev/***sda-nvme***
 
 * 1G, EFI System
 
@@ -42,7 +42,7 @@ mkdir /windows
 
 mount /dev/WINDOWSEFI /windows/
 
-pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano ***INTEL/AMD***-ucode networkmanager bluez bluez-utils grub fastfetch efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
+pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano ***intel/amd***-ucode networkmanager bluez bluez-utils grub fastfetch efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
@@ -106,7 +106,7 @@ shutdown now
 
 # post-install.sh
 
-sudo nmcli dev wifi connect ***WIFI*** pasword "***PASSWORD***"
+sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
 git clone https://github.com/gxbrriellll/arch-post-install.git
 
