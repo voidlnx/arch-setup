@@ -24,23 +24,19 @@ cfdisk /dev/***sda-nvme***
 
 lsblk
 
-mkfs.fat -F32 /dev/***1G, EFI System***
+! mkfs.fat -F32 /dev/***1G, EFI System***
 
-mkfs.ext4 /dev/***G, Linux filesystem***
+! mkfs.ext4 /dev/***G, Linux filesystem***
 
-mkswap /dev/***16G, Linux swap***
+! mkswap /dev/***16G, Linux swap***
 
-swapon /dev/***16G, Linux swap***
+! swapon /dev/***16G, Linux swap***
 
-mount /dev/***G, Linux filesystem*** /mnt
+! mount /dev/***G, Linux filesystem*** /mnt
 
-mkdir /mnt/efi
+! mkdir /mnt/efi
 
-mount /dev/***1G, EFI System*** /mnt/efi
-
-mkdir /windows
-
-mount /dev/***Windows EFI*** /windows/
+! mount /dev/***1G, EFI System*** /mnt/efi
 
 pacstrap -K /mnt base base-devel linux linux-headers linux-firmware sudo git nano ***intel/amd***-ucode networkmanager bluez bluez-utils grub fastfetch efibootmgr dosfstools mtools os-prober gcc cargo ntfs-3g make pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 
@@ -88,7 +84,7 @@ nano /etc/default/grub
 
 (***GRUB_TIMEOUT=30***, ***GRUB_TERMINAL_OUTPUT=console***, ***GRUB_DISABLE_OS_PROBER***).
 
-grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
+! grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
