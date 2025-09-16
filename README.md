@@ -124,7 +124,7 @@ git clone https://github.com/gxbrriellll/arch-dotfiles.git
 
 cd /tmp
 
-git clone https://aur.archlinux.org/yay.git ~/arch-dotfiles
+git clone https://aur.archlinux.org/yay.git
 
 cd yay
 
