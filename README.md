@@ -136,11 +136,11 @@ chmod +x apps-install.sh
 
 ./apps-install.sh
 
-rsync -avh --progress ~/arch-dotfiles/.config/ ~/.config/
+mv ~/arch-dotfiles/.config/* ~/.config/
 
-rsync -avh --progress ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
+mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
 
-rsync -avh --progress ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
+mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
