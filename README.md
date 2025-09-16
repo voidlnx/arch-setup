@@ -108,6 +108,6 @@ sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
 git clone https://github.com/gxbrriellll/arch-setup.git
 
-cd arch-install
+cd arch-setup
 
 bash arch-post-install.sh
