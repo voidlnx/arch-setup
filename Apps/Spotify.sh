@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo pacman -Syu --noconfirm spotify-launcher
+yay -Syu --noconfirm spotify 
 
-spotify-launcher &
+spotify &
