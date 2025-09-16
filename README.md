@@ -106,8 +106,8 @@ shutdown now
 
 sudo nmcli dev wifi connect ***WIFI*** pasword "***PASSWORD***"
 
-git clone https://github.com/gxbrriellll/arch-install.git
+git clone https://github.com/gxbrriellll/arch-post-install.git
 
 cd arch-install
 
-bash post-install.sh
+bash arch-post-install.sh
