@@ -106,6 +106,10 @@ shutdown now
 
 sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
+sudo nano /etc/pacman.conf
+
+(***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
+
 mkdir -p ~/Pictures/Screenshots 
 
 mkdir -p ~/Pictures/Wallpapers
