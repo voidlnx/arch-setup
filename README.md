@@ -118,8 +118,6 @@ mkdir -p ~/.local/bin
 
 mkdir -p ~/.local/share/fonts
 
-cd ~
-
 git clone https://github.com/gxbrriellll/arch-dotfiles.git
 
 git clone https://github.com/gxbrriellll/arch-setup.git
