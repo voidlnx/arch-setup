@@ -102,12 +102,44 @@ umount -lR /mnt
 
 shutdown now
 
-# arch-post-install.sh
+# Post-install
 
 sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
-git clone https://github.com/gxbrriellll/arch-setup.git
+mkdir -p ~/Pictures/Screenshots 
 
-cd arch-setup
+mkdir -p ~/Pictures/Wallpapers
 
-bash arch-post-install.sh
+mkdir -p ~/.local/bin
+
+mkdir -p ~/.local/share/fonts
+
+sudo pacman -Syu --noconfirm lib32-mesa gdm gnome hyprland blueman alsa-utils pipewire-alsa pipewire-pulse pipewire-jack wireplumber pavucontrol noto-fonts noto-fonts-emoji ttf-font-awesome ttf-liberation ttf-dejavu rofi-emoji libxcb gnome-backgrounds p7zip xz gst-libav gst-plugins-base gst-plugins-good gst-plugins-bad gst-plugins-ugly ffmpeg flatpak slurp inxi wayland-protocols xorg-xwayland waybar kitty qt5-graphicaleffects gnome-software power-profiles-daemon xorg swww rofi wayland qt5-wayland qt5-base qt5-xcb-private-headers kio kconfig kcoreaddons xdg-desktop-portal xdg-desktop-portal-wlr grim nautilus eog gnome-text-editor gnome-control-center gnome-themes-extra gnome-tweaks vlc-plugin-gstreamer vlc-plugin-ffmpeg vlc ntfs-3g pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
+
+git clone https://github.com/gxbrriellll/arch-dotfiles.git
+
+cd /tmp
+
+git clone https://aur.archlinux.org/yay.git ~/arch-dotfiles
+
+cd yay
+
+makepkg -si --noconfirm
+
+yay -Syu --noconfirm appimagelauncher waypaper cliphist wlogout
+
+flatpak install -y flathub com.github.tchx84.Flatseal io.gitlab.librewolf-community
+
+rsync -avh --progress ~/arch-dotfiles/.config/ ~/.config/
+
+rsync -avh --progress ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
+
+rsync -avh --progress ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
+
+fc-cache -fv
+
+echo "QT_QPA_PLATFORM=wayland" | sudo tee /etc/environment.d/qt-wayland.conf
+
+sudo systemctl enable gdm
+
+sudo systemctl start gdm
