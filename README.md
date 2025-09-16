@@ -120,6 +120,8 @@ mkdir -p ~/.local/share/fonts
 
 git clone https://github.com/gxbrriellll/arch-dotfiles.git
 
+git clone https://github.com/gxbrriellll/arch-setup.git
+
 cd /tmp
 
 git clone https://aur.archlinux.org/yay.git
@@ -128,9 +130,9 @@ cd yay
 
 makepkg -si --noconfirm
 
-cd ~
+cd arch-setup
 
-git clone https://github.com/gxbrriellll/arch-setup.git
+chmod +x apps-install.sh
 
 ./apps-install.sh
 
