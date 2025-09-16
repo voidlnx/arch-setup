@@ -2,9 +2,9 @@
 
 iwctl
 
-station wlan0 connect ***WIFI***
+station wlan0 connect ***wifi***
 
-***PASSWORD***
+***password***
 
 exit
 
@@ -24,19 +24,19 @@ cfdisk /dev/***SDA-NVME***
 
 lsblk
 
-mkfs.fat -F32 /dev/***1G,EFISYSTEM***
+mkfs.fat -F32 /dev/***1G, EFI System***
 
-mkfs.ext4 /dev/***G,LINUXFILESYSTEM***
+mkfs.ext4 /dev/***G, Linux filesystem***
 
-mkswap /dev/***16G,LINUXSWAP***
+mkswap /dev/***16G, Linux swap***
 
-swapon /dev/***16G,LINUXSWAP***
+swapon /dev/***16G, Linux swap***
 
-mount /dev/***G,LINUXFILESYSTEM*** /mnt
+mount /dev/***G, Linux filesystem*** /mnt
 
 mkdir /mnt/efi
 
-mount /dev/***1G,EFISYSTEM*** /mnt/efi
+mount /dev/***1G, EFI System*** /mnt/efi
 
 mkdir /windows
 
@@ -50,15 +50,15 @@ arch-chroot /mnt
 
 passwd
 
-***PASSWORD***
+***password***
 
-***PASSWORD***
+***password***
 
-useradd -m -g users -G wheel,storage,video,audio -s /bin/bash ***USER***
+useradd -m -g users -G wheel,storage,video,audio -s /bin/bash ***user***
 
-passwd ***USER***
+passwd ***user***
 
-***PASSWORD***
+***password***
 
 EDITOR=nano visudo
 
@@ -82,11 +82,11 @@ echo "LANG=en_US.UTF-8" >> /etc/locale.conf
 
 cat /etc/locale.conf
 
-echo "***PC***" >> /etc/hostname
+echo "***pc***" >> /etc/hostname
 
 nano /etc/hosts
 
-***127.0.1.1***        ***PC***.localdomain        ***PC***
+***127.0.1.1***        ***pc***.localdomain        ***pc***
 
 nano /etc/default/grub
 
