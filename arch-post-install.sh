@@ -14,6 +14,7 @@ pacman-contrib mesa mesa-utils mesa-demos libva-utils archlinux-keyring
 mkdir -p ~/Pictures/Screenshots
 mkdir -p ~/Pictures/Wallpapers
 mkdir -p ~/.local/bin
+mkdir -p ~/.local/share/fonts
 
 cd /tmp
 git clone https://aur.archlinux.org/yay.git
@@ -33,7 +34,6 @@ git clone --depth=1 https://github.com/gxbrriellll/arch-dotfiles.git ~/arch-dotf
 
 rsync -avh --progress ~/arch-dotfiles/.config/ ~/.config/
 
-mkdir -p ~/.local/share/fonts
 rsync -avh --progress ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
 
 rsync -avh --progress ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
@@ -45,7 +45,3 @@ rm -rf ~/arch-dotfiles
 sudo systemctl enable gdm
 
 sudo systemctl start gdm
-
-
-
-
