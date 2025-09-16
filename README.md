@@ -60,7 +60,7 @@ passwd ***user***
 
 EDITOR=nano visudo
 
-(***%wheel ALL=(ALL:ALL) ALL***).
+-# (***%wheel ALL=(ALL:ALL) ALL***).
 
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
@@ -68,7 +68,7 @@ hwclock --systohc
 
 nano /etc/locale.gen 
 
-(***en_US . UTF-8 UTF-8***).
+#(***en_US . UTF-8 UTF-8***).
 
 locale-gen
 
@@ -88,7 +88,7 @@ mount /dev/***Windows,EFISystem*** /windows/
 
 nano /etc/default/grub
 
-(***GRUB_TIMEOUT=30***, ***GRUB_TERMINAL_OUTPUT=console***, ***GRUB_DISABLE_OS_PROBER***).
+-# (***GRUB_TIMEOUT=30***, ***GRUB_TERMINAL_OUTPUT=console***, ***GRUB_DISABLE_OS_PROBER***).
 
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 
@@ -108,7 +108,7 @@ sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
 sudo nano /etc/pacman.conf
 
-(***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
+-# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
 mkdir -p ~/Pictures/Screenshots 
 
