@@ -86,7 +86,7 @@ nano /etc/hosts
 
 nano /etc/default/grub
 
-(***GRUB_DISABLE_OS_PROBER***, ***GRUB_TIMEOUT=30***, ***GRUB_CMDLINE_LINUX_DEFAULT***, ***GRUB_TERMINAL_OUTPUT***).
+(***GRUB_TIMEOUT=30***, ***GRUB_TERMINAL_OUTPUT=console***, ***GRUB_DISABLE_OS_PROBER***).
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
 
