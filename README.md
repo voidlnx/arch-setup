@@ -134,10 +134,6 @@ makepkg -si --noconfirm
 
 cd ~
 
-yay -Syu --noconfirm appimagelauncher waypaper cliphist wlogout
-
-flatpak install -y flathub com.github.tchx84.Flatseal io.gitlab.librewolf-community
-
 rsync -avh --progress ~/arch-dotfiles/.config/ ~/.config/
 
 rsync -avh --progress ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
