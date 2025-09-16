@@ -22,6 +22,8 @@ cfdisk /dev/***SDA-NVME***
 
 * ***G***, Linux filesystem
 
+lsblk
+
 mkfs.fat -F32 /dev/***1G,EFISYSTEM***
 
 mkfs.ext4 /dev/***G,LINUXFILESYSTEM***
