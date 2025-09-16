@@ -64,11 +64,7 @@ EDITOR=nano visudo
 
 (***%wheel ALL=(ALL:ALL) ALL***).
 
-ln -sf /usr/share/zoneinfo/
-
-America/
-
-New_York /etc/localtime
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 
 hwclock --systohc
 
