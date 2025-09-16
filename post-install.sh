@@ -25,7 +25,7 @@ yay -Syu --noconfirm appimagelauncher waypaper cliphist wlogout xclicker
 
 echo "QT_QPA_PLATFORM=wayland" | sudo tee /etc/environment.d/qt-wayland.conf
 
-flatpak install flathub com.github.tchx84.Flatseal -y
+flatpak install -y flathub com.github.tchx84.Flatseal io.gitlab.librewolf-community
 
 cd ~
 git clone --depth=1 https://github.com/gxbrriellll/arch-dotfiles.git ~/arch-dotfiles
@@ -44,6 +44,3 @@ rm -rf ~/arch-dotfiles
 sudo systemctl enable gdm
 
 sudo systemctl start gdm
-
-
-
