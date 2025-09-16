@@ -4,4 +4,4 @@ sudo pacman -Syu --noconfirm lib32-mesa gdm gnome hyprland blueman alsa-utils pi
 
 yay -Syu --noconfirm appimagelauncher waypaper cliphist wlogout
 
-flatpak install -y flathub com.github.tchx84.Flatseal io.gitlab.librewolf-community
+flatpak install -y flathub com.github.tchx84.Flatseal io.gitlab.librewolf-community io.github.realmazharhussain.GdmSettings
