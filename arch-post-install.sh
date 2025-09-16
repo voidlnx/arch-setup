@@ -21,7 +21,7 @@ makepkg -si --noconfirm --skippgpcheck
 cd ~
 rm -rf /tmp/yay
 
-yay -Syu --noconfirm appimagelauncher waypaper cliphist wlogout xclicker
+yay -Syu --noconfirm appimagelauncher waypaper cliphist wlogout
 
 echo "QT_QPA_PLATFORM=wayland" | sudo tee /etc/environment.d/qt-wayland.conf
 
@@ -44,4 +44,5 @@ rm -rf ~/arch-dotfiles
 sudo systemctl enable gdm
 
 sudo systemctl start gdm
+
 
