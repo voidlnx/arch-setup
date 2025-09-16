@@ -2,4 +2,4 @@
 
 flatpak install -y flathub com.discordapp.Discord
 
-discord &
+flatpak run com.discordapp.Discord &
