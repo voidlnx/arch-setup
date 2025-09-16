@@ -96,7 +96,7 @@ umount -lR /mnt
 
 shutdown now
 
-# post-install.sh
+# arch-post-install.sh
 
 sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
