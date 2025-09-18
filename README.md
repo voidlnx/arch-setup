@@ -110,11 +110,13 @@ sudo nano /etc/pacman.conf
 
 -# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
+mkdir -p ~/etc/gdm
+
+mkdir -p ~/Pictures/Screenshots
+
 mkdir -p ~/.icons
 
 mkdir -p ~/.themes
-
-mkdir -p ~/Pictures/Screenshots 
 
 mkdir -p ~/.local/bin
 
