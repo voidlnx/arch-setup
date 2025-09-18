@@ -144,6 +144,12 @@ mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
+sudo pacman -Syu
+
+yay -Syu
+
+flatpak update
+
 sudo systemctl enable gdm
 
 sudo systemctl start gdm
