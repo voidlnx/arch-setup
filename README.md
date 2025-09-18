@@ -138,6 +138,8 @@ chmod +x apps-post-install.sh
 
 ./apps-post-install.sh
 
+mv ~/arch-dotfiles/etc/gdm/* ~/etc/gdm/
+
 mv ~/arch-dotfiles/.config/* ~/.config/
 
 mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
