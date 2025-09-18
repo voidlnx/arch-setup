@@ -110,8 +110,6 @@ sudo nano /etc/pacman.conf
 
 -# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
-mkdir -p ~/etc/gdm
-
 mkdir -p ~/Pictures/Screenshots
 
 mkdir -p ~/.icons
@@ -137,8 +135,6 @@ cd arch-setup
 chmod +x apps-post-install.sh
 
 ./apps-post-install.sh
-
-mv ~/arch-dotfiles/etc/gdm/* ~/etc/gdm/
 
 mv ~/arch-dotfiles/.config/* ~/.config/
 
