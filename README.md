@@ -150,6 +150,8 @@ yay -Syu
 
 flatpak update
 
-sudo systemctl enable gdm
+sudo systemctl enable lightdm.service
 
-sudo systemctl start gdm
+sudo systemctl set-default graphical.target
+
+sudo systemctl start lightdm.service
