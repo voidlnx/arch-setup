@@ -132,9 +132,9 @@ makepkg -si --noconfirm
 
 cd arch-setup
 
-chmod +x apps-post-install.sh
+chmod +x post-install.sh
 
-./apps-post-install.sh
+./post-install.sh
 
 mv ~/arch-dotfiles/.config/* ~/.config/
 
