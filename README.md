@@ -102,7 +102,7 @@ umount -lR /mnt
 
 shutdown now
 
-# Post-install
+# Post-install (KDE Plasma + Hyprland)
 
 sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
