@@ -152,4 +152,6 @@ flatpak update
 
 sudo systemctl enable --now sddm.service
 
+systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
 sudo systemctl start sddm.service
