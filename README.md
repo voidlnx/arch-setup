@@ -144,11 +144,11 @@ mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
-yay -Syu
+yay -Syu --noconfirm
 
-flatpak update
+flatpak update -y
 
 sudo systemctl enable --now sddm.service
 
