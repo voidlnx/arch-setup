@@ -25,7 +25,7 @@ flatpak override --user \
   --filesystem=xdg-run/discord-ipc-0 \
   org.vinegarhq.Sober
 
-sudo pcaman -Syu --noconfirm
+sudo pacman -Syu --noconfirm
 
 yay -Syu --noconfirm
 
