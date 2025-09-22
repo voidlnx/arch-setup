@@ -144,16 +144,8 @@ mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
-sudo pacman -Syu --noconfirm
-
-yay -Syu --noconfirm
-
-flatpak update -y
-
-sudo systemctl enable --now sddm.service
-
 sudo systemctl enable sddm
 
-systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+sudo systemctl enable --now sddm.service
 
 sudo systemctl start sddm.service
