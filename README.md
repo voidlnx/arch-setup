@@ -110,8 +110,6 @@ sudo nano /etc/pacman.conf
 
 -# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
-git clone https://github.com/gxbrriellll/arch-dotfiles.git
-
 git clone https://github.com/gxbrriellll/arch-setup.git
 
 cd arch-setup
@@ -119,17 +117,3 @@ cd arch-setup
 chmod +x post-install.sh
 
 ./post-install.sh
-
-mv ~/arch-dotfiles/.config/* ~/.config/
-
-mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
-
-mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
-
-fc-cache -fv
-
-sudo systemctl enable sddm
-
-sudo systemctl enable --now sddm.service
-
-sudo systemctl start sddm.service
