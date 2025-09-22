@@ -30,3 +30,19 @@ sudo pcaman -Syu --noconfirm
 yay -Syu --noconfirm
 
 flatpak update -y
+
+git clone https://github.com/gxbrriellll/arch-dotfiles.git
+
+mv ~/arch-dotfiles/.config/* ~/.config/
+
+mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
+
+mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
+
+fc-cache -fv
+
+sudo systemctl enable sddm
+
+sudo systemctl enable --now sddm.service
+
+sudo systemctl start sddm.service
