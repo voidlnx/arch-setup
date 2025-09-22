@@ -110,25 +110,9 @@ sudo nano /etc/pacman.conf
 
 -# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
-mkdir -p ~/Pictures/Screenshots
-
-mkdir -p ~/.icons
-
-mkdir -p ~/.themes
-
-mkdir -p ~/.local/bin
-
 git clone https://github.com/gxbrriellll/arch-dotfiles.git
 
 git clone https://github.com/gxbrriellll/arch-setup.git
-
-cd /tmp
-
-git clone https://aur.archlinux.org/yay.git
-
-cd yay
-
-makepkg -si --noconfirm
 
 cd arch-setup
 
