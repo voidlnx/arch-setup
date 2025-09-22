@@ -44,5 +44,3 @@ fc-cache -fv
 sudo systemctl enable sddm
 
 sudo systemctl enable --now sddm.service
-
-sudo systemctl start sddm.service
