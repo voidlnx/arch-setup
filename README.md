@@ -14,7 +14,7 @@ pacman -S --noconfirm archlinux-keyring
 
 lsblk
 
-cfdisk /dev/***sda-nvme***
+cfdisk /dev/***sda/nvme***
 
 * 1G, EFI System
 
@@ -102,7 +102,7 @@ umount -lR /mnt
 
 shutdown now
 
-# Post-install (Plasma + Hyprland)
+# Post-install
 
 sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
