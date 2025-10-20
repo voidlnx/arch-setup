@@ -10,7 +10,9 @@ exit
 
 pacman -Sy
 
-pacman -S --noconfirm archlinux-keyring
+pacman -S archlinux-keyring
+
+y
 
 lsblk
 
