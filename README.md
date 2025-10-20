@@ -124,6 +124,8 @@ mkdir -p ~/.themes
 
 mkdir -p ~/.local/bin
 
+git clone https://github.com/voidlnx/arch-dotfiles.git
+
 git clone https://github.com/voidlnx/arch-setup.git
 
 cd arch-setup
@@ -131,3 +133,13 @@ cd arch-setup
 chmod +x post-install.sh
 
 ./post-install.sh
+
+mv ~/arch-dotfiles/.config/* ~/.config/
+
+mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
+
+mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
+
+fc-cache -fv
+
+sudo systemctl enable sddm --now
