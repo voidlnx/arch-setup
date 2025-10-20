@@ -2,6 +2,8 @@
 
 iwctl
 
+device list
+
 station wlan0 connect ***wifi***
 
 ***password***
