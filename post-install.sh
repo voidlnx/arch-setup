@@ -31,7 +31,7 @@ yay -Syu --noconfirm
 
 flatpak update -y
 
-git clone https://github.com/gxbrriellll/arch-dotfiles.git
+git clone https://github.com/voidlnx/arch-dotfiles.git
 
 mv ~/arch-dotfiles/.config/* ~/.config/
 
