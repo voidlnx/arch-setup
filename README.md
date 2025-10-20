@@ -114,7 +114,7 @@ sudo nano /etc/pacman.conf
 
 -# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
-git clone https://github.com/gxbrriellll/arch-setup.git
+git clone https://github.com/voidlnx/arch-setup.git
 
 cd arch-setup
 
