@@ -116,6 +116,14 @@ sudo nano /etc/pacman.conf
 
 -# (***[multilib]***, ***Include = /etc/pacman.d/mirrorlist***).
 
+mkdir -p ~/Pictures/Screenshots
+
+mkdir -p ~/.icons
+
+mkdir -p ~/.themes
+
+mkdir -p ~/.local/bin
+
 git clone https://github.com/voidlnx/arch-setup.git
 
 cd arch-setup
