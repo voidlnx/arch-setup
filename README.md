@@ -152,4 +152,6 @@ mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
-sudo systemctl enable sddm --now
+sudo systemctl enable sddm
+
+sudo reboot
