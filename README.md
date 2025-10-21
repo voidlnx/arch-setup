@@ -118,6 +118,8 @@ sudo nano /etc/pacman.conf
 
 mkdir -p ~/Pictures/Screenshots
 
+mkdir -p ~/Pictures/Wallpapers
+
 mkdir -p ~/.icons
 
 mkdir -p ~/.themes
