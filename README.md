@@ -124,15 +124,17 @@ mkdir -p ~/.themes
 
 mkdir -p ~/.local/bin
 
-git clone https://aur.archlinux.org/yay.git
-
 git clone https://github.com/voidlnx/arch-dotfiles.git
 
 git clone https://github.com/voidlnx/arch-setup.git
 
+git clone https://aur.archlinux.org/yay.git
+
 cd yay
 
 makepkg -si --noconfirm
+
+cd ~
 
 cd arch-setup
 
