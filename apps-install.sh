@@ -1,4 +1,4 @@
-sudo pacman -Syu firefox discord spotify-launcher audacity kid3 steam
+sudo pacman -Syu --noconfirm firefox discord spotify-launcher audacity kid3 steam
 
 yay -Syu --noconfirm heroic-games-launcher-bin
 
