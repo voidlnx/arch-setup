@@ -1,6 +1,6 @@
 sudo pacman -Syu firefox discord spotify-launcher audacity kid3 steam
 
-yay -Syu heroic-games-launcher-bin
+yay -Syu --noconfirm heroic-games-launcher-bin
 
 flatpak install -y flathub com.stremio.Stremio org.vinegarhq.Sober com.protonvpn.www
 
