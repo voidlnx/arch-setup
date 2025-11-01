@@ -126,7 +126,7 @@ mkdir -p ~/.themes
 
 mkdir -p ~/.local/bin
 
-git clone https://github.com/voidlnx/arch-dotfiles.git
+git clone https://github.com/voidlnx/dotfiles.git
 
 git clone https://github.com/voidlnx/arch-setup.git
 
@@ -144,11 +144,11 @@ chmod +x post-install.sh
 
 ./post-install.sh
 
-mv ~/arch-dotfiles/.config/* ~/.config/
+mv ~/dotfiles/.config/* ~/.config/
 
-mv ~/arch-dotfiles/.local/share/fonts/ ~/.local/share/fonts/
+mv ~/dotfiles/.local/share/fonts/ ~/.local/share/fonts/
 
-mv ~/arch-dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
+mv ~/dotfiles/Pictures/Wallpapers/ ~/Pictures/Wallpapers/
 
 fc-cache -fv
 
