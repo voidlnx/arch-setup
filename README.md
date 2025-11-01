@@ -1,4 +1,4 @@
-# Tutorial Arch Linux Dual Boot (Windows)
+# Tutorial Arch Linux Setup, Dual Boot (Windows)
 
 iwctl
 
