@@ -1,4 +1,4 @@
-# Tutorial Arch Linux, Dual Boot Windows
+# Tutorial Arch Linux Dual Boot (Windows)
 
 iwctl
 
@@ -128,7 +128,7 @@ mkdir -p ~/.local/bin
 
 git clone https://github.com/voidlnx/dotfiles.git
 
-git clone https://github.com/voidlnx/arch-setup.git
+git clone https://github.com/voidlnx/arch-linux-setup.git
 
 git clone https://aur.archlinux.org/yay.git
 
@@ -138,7 +138,7 @@ makepkg -si --noconfirm
 
 cd ~
 
-cd arch-setup
+cd arch-linux-setup
 
 chmod +x post-install.sh
 
