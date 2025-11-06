@@ -126,9 +126,9 @@ mkdir -p ~/.themes
 
 mkdir -p ~/.local/bin
 
-git clone https://github.com/voidlnx/dotfiles.git
+git clone https://github.com/nelsongbrl/dotfiles.git
 
-git clone https://github.com/voidlnx/arch-linux-setup.git
+git clone https://github.com/nelsongbrl/arch-linux-setup.git
 
 git clone https://aur.archlinux.org/yay.git
 
