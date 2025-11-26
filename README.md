@@ -138,11 +138,11 @@ makepkg -si --noconfirm
 
 cd ~
 
-cd arch-linux-setup
+cd arch-linux
 
-chmod +x post-install.sh
+chmod +x 2.sh
 
-./post-install.sh
+./2.sh
 
 mv ~/dotfiles/.config/* ~/.config/
 
