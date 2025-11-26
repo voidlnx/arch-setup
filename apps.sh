@@ -2,7 +2,7 @@ sudo pacman -Syu --noconfirm firefox discord spotify-launcher audacity kid3 stea
 
 yay -Syu --noconfirm heroic-games-launcher-bin
 
-flatpak install -y flathub com.stremio.Stremio org.vinegarhq.Sober com.protonvpn.www
+flatpak install -y flathub com.stremio.Stremio org.vinegarhq.Sober
 
 flatpak override --user \
   --filesystem=xdg-run/app/com.discordapp.Discord:create \
