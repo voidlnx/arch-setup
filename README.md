@@ -1,4 +1,4 @@
-# Tutorial Arch Linux Setup, Dual Boot (Windows)
+# 1
 
 iwctl
 
@@ -108,7 +108,7 @@ umount -lR /mnt
 
 shutdown now
 
-# Post-install
+# 2
 
 sudo nmcli dev wifi connect ***wifi*** pasword "***password***"
 
@@ -126,9 +126,9 @@ mkdir -p ~/.themes
 
 mkdir -p ~/.local/bin
 
-git clone https://github.com/nelsongbrl/dotfiles.git
+git clone https://github.com/nelson-abreu/dotfiles.git
 
-git clone https://github.com/nelsongbrl/arch-linux-setup.git
+git clone https://github.com/nelson-abreu/arch-linux-setup.git
 
 git clone https://aur.archlinux.org/yay.git
 
